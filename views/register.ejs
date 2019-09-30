@@ -1,0 +1,65 @@
+<%- include('header', {class_name1: '', class_name2: 'active-link', class_name3:
+''}); -%>
+
+<main>
+  <div class="hero-register">
+    <div class="heading">Event Registration</div>
+  </div>
+  <br /><br />
+  <div class="form">
+    <form action="/register" method="POST">
+      <div class="row">
+        Username
+        <input type="text" name="username" required />
+      </div>
+      <br />
+      <div class="row">
+        Email
+        <input type="email" name="email" required />
+      </div>
+
+      <div class="head-event">
+        <div class="event-heading">
+          EVENTS
+        </div>
+      </div>
+      <br />
+      <label class="container">
+        Programming
+        <input type="checkbox" checked="checked" name="programming" />
+        <span class="checkmark"></span>
+      </label>
+      <label class="container"
+        >Photography
+        <input type="checkbox" name="photography" />
+        <span class="checkmark"></span>
+      </label>
+      <label class="container"
+        >Content Writing
+        <input type="checkbox" name="c_writing" />
+        <span class="checkmark"></span>
+      </label>
+      <label class="container"
+        >Story Writing
+        <input type="checkbox" name="s_writing" />
+        <span class="checkmark"></span>
+      </label>
+      <label class="container"
+        >Idea Pitching
+        <input type="checkbox" name="pitching" />
+        <span class="checkmark"></span>
+      </label>
+      <label class="container"
+        >Chess
+        <input type="checkbox" name="chess" />
+        <span class="checkmark"></span>
+      </label>
+      <br /><br />
+      <div class="register-btn-container">
+        <button class="explore" type="submit">Register</button>
+      </div>
+    </form>
+  </div>
+</main>
+
+<%- include('footer'); -%>

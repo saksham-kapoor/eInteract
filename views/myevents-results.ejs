@@ -1,0 +1,76 @@
+<%- include('header', {class_name1: '', class_name2: '', class_name3:
+'active-link'}); -%>
+
+<main>
+  <div class="hero-register">
+    <div class="heading">Check Your Registered Events</div>
+  </div>
+  <br /><br />
+  <div class="form">
+    <form action="/myevents" method="POST">
+      <div class="row">
+        Username
+        <input type="text" name="username" required />
+      </div>
+
+      <br />
+      <div class="register-btn-container">
+        <button class="explore" type="submit">Go</button>
+      </div>
+      <div class="head-event">
+        <div class="event-heading">
+          EVENTS
+        </div>
+      </div>
+
+      <div class="card-wrapper" style="display: <%= s1 %>">
+        <div class="card-index">
+          <img src="img/1.jpg" alt="card-bg" class="card-img" />
+
+          <h1>Programming</h1>
+        </div>
+      </div>
+      <div class="card-wrapper" style="display: <%= s2 %>">
+        <div class="card-index">
+          <img src="img/2.jpg" alt="card-bg" class="card-img" />
+          <h1>Photography</h1>
+        </div>
+      </div>
+      <div class="card-wrapper" style="display: <%= s3 %>">
+        <div class="card-index">
+          <img src="img/3.jpg" alt="card-bg" class="card-img" />
+
+          <h1>Content Writing</h1>
+        </div>
+      </div>
+      <div class="card-wrapper" style="display: <%= s4 %>">
+        <div class="card-index">
+          <img src="img/4.jpg" alt="card-bg" class="card-img" />
+          <h1>Story Writing</h1>
+        </div>
+      </div>
+      <div class="card-wrapper" style="display: <%= s5 %>">
+        <div class="card-index">
+          <img src="img/5.jpg" alt="card-bg" class="card-img" />
+
+          <h1>Idea Pitching</h1>
+        </div>
+      </div>
+      <div class="card-wrapper" style="display: <%= s6 %>">
+        <div class="card-index">
+          <img src="img/6.jpg" alt="card-bg" class="card-img" />
+          <h1>Chess</h1>
+        </div>
+      </div>
+      <div class="card-wrapper" style="display: <%= s7 %>">
+        <div class="card-index">
+          <h1>NO EVENT REGISTERED</h1>
+        </div>
+      </div>
+
+      <br /><br />
+    </form>
+  </div>
+</main>
+
+<%- include('footer'); -%>

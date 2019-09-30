@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>E-Interact</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/cards.css" />
+    <link rel="stylesheet" href="css/nav-foot.css" />
+    <link rel="stylesheet" href="css/form-register.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="img/logo.png" alt="E-Interact" />
+        </div>
+        <div class="links">
+          <ul>
+            <li class="<%= class_name1 %>"><a href="/">HOME</a></li>
+            <li class="<%= class_name2 %>"><a href="/register">REGISTER</a></li>
+            <li class="<%= class_name3 %>"><a href="/myevents">MY EVENTS</a></li>
+          </ul>
+          <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+          <div id="hamSelect">
+            <label for="nav-toggle" class="nav-toggle-label"
+              ><span></span
+            ></label>
+          </div>
+        </div>
+      </nav>
+      <div class="mobile-nav">
+        <div class="mobile-nav-link font-roboto">
+          <a href="/">HOME</a>
+        </div>
+        <div class="mobile-nav-link font-roboto">
+          <a href="/register">REGISTER</a>
+        </div>
+        <div class="mobile-nav-link font-roboto">
+          <a href="/myevents">MY EVENTS</a>
+        </div>
+      </div>
+    </header>

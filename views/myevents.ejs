@@ -1,0 +1,26 @@
+<%- include('header', {class_name1: '', class_name2: '', class_name3:
+'active-link'}); -%>
+
+<main>
+  <div class="hero-register">
+    <div class="heading">Check Your Registered Events</div>
+  </div>
+  <br /><br />
+  <div class="form">
+    <form action="/myevents" method="POST">
+      <div class="row">
+        Username
+        <input type="text" name="username" required />
+      </div>
+
+      <br />
+      <div class="register-btn-container">
+        <button class="explore" type="submit">Go</button>
+      </div>
+
+      <br /><br />
+    </form>
+  </div>
+</main>
+
+<%- include('footer'); -%>
